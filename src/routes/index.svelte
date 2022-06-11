@@ -1,49 +1,20 @@
-<html lang="en">
-    <body>
-        <p class="line-1 anim-typewriter">Under (re)construction. Come back soon!</p>
-    </body>
-</html>
+<main>
+    <div class="container">
+        <h1>Narottam Medhora | Data Journalist</h1>
+        <p>Under <span>(re)</span>construction!</p>
+    </div>
+</main>
 
 <style>
-    /* Global */
-    html{
-        min-height: 100%;
-        overflow: hidden;
+    main {
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .9);
+        color: rgba(255, 255, 255, .75);
+        padding: 1em;
+        font-family: 'Open Sans', sans-serif;
     }
 
-    body{
-        height: calc(100vh - 8em);
-        padding: 4em;
-        color: rgba(255,255,255,.75);
-        font-family: 'Courier New', Courier, monospace;  
-        background-color: rgb(25,25,25);  
-    }
-
-    .line-1 {
-        position: relative;
-        top: 50%;  
-        width: 24em;
-        margin: 0 auto;
-        border-right: 2px solid rgba(255,255,255,.75);
-        font-size: 180%;
-        text-align: center;
-        white-space: nowrap;
-        overflow: hidden;
-        transform: translateY(-50%);    
-    }
-
-    /* Animation */
-    .anim-typewriter{
-        animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-    }
-
-    @keyframes typewriter{
-    from{width: 0;}
-    to{width: 24em;}
-    }
-
-    @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
+    span {
+        color: orange;
     }
 </style>
