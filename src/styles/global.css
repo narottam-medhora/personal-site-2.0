@@ -2,9 +2,11 @@
 :root {
     --main-font-color: white;
     --main-background-color: rgba(0, 0, 0, .7);
+    --main-link-color: rgb(2, 151, 249);
+    --main-link-visited: rgb(255, 166, 0);
 }
 
-/* TYPOGRAPHY */
+/* LAYOUT */
 html, body {
     height: 100%;
     background-color: var(--main-background-color);
@@ -22,4 +24,27 @@ html, body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
+}
+
+/* LINKS */
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a:link {
+    color: var(--main-link-color);
+}
+
+a:visited {
+    color: var(--main-link-visited)
+}
+
+a:focus, a:hover {
+    border-bottom: 1px solid;
+}
+
+a:active {
+    color: red;
 }
