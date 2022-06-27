@@ -6,22 +6,22 @@
 </main>
 
 <style>
-	main {
-		margin-block-start: 1em;
-		text-align: center;
-	}
+    main {
+        margin: 0 auto;
+    }
 
-	/* TYPOGRAPHY */
-	h1 {
-		font-size: 2em;
-	}
+    h1 {
+        font-size: 2em;
+        padding: 16px;
+    }
 
-	p {
-		margin-block-start: 1em;
-		line-height: 1.4;
-	}
+    p {
+        padding: 16px;
+    }
 
-	span {
-		color: tomato;
-	}
+    @media screen and (max-width: 480px) {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
 </style>

@@ -16,22 +16,13 @@
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: baseline;
-        margin-block-end: 1em;
-        margin-inline: 1em;
-        text-align: right;
-        grid-row-start: 2;
-        grid-row-end: 3;
+
+        padding: 16px;
     }
 
-    .social-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: baseline;
-        align-items: flex-start;
-    }
-
-    .social-container a {
-        padding: 1em;
+    @media screen and (max-width: 480px) {
+        footer {
+            font-size: .8em;
+        }
     }
 </style>
