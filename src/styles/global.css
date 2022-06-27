@@ -1,0 +1,25 @@
+/* COLORS */
+:root {
+    --main-font-color: white;
+    --main-background-color: rgba(0, 0, 0, .7);
+}
+
+/* TYPOGRAPHY */
+html, body {
+    height: 100%;
+    background-color: var(--main-background-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--main-font-color);
+
+    /* Sets rendering engine to optimize for legibility */
+    text-rendering: optimizeLegibility;
+
+    /* Sets kerning (the space between font characters) information of the font to normal */
+    font-kerning: normal;
+}
+
+.container {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}

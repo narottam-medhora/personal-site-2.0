@@ -1,20 +1,23 @@
-<main>
-    <div class="container">
-        <h1>Narottam Medhora | Data Journalist</h1>
-        <p>Under <span>(re)</span>construction!</p>
-    </div>
-</main>
+<!-- Inject CSS reset into <head> -->
+<svelte:head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
 
-<style>
-    main {
-        height: 100vh;
-        background-color: rgba(0, 0, 0, .9);
-        color: rgba(255, 255, 255, .75);
-        padding: 1em;
-        font-family: 'Open Sans', sans-serif;
-    }
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</svelte:head>
 
-    span {
-        color: orange;
-    }
-</style>
+<!-- Import components -->
+<script>
+    import Placeholder from "../components/Placeholder.svelte";
+    import Footer from "../components/Footer.svelte";
+</script>
+
+<!-- Place components -->
+<Placeholder />
+<Footer />
+
